@@ -1,0 +1,148 @@
+/* css reset from joshwcomeau.com */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+:root {
+    --clr-bg-100: #fff;
+    --clr-bg-900: #000;
+    --clr-neutral-100: #fff;
+    --clr-neutral-900: #000;
+    --clr-primary-1: #18A1AE;
+    --clr-primary-2: #2D3248;
+    --clr-primary-3: #696E81;
+    --clr-neutral-1: #969696;
+    --font-normal: 400;
+    --font-bold: 700;
+}
+
+body {
+    background-color: var(--clr-primary-1);
+    background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
+    background-position: -90% -500px, 170% 400px;
+    background-repeat: no-repeat;
+    background-size: 1080px;
+    display: grid;
+    place-content: center;
+    padding: 0 1.5rem;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+main {
+    max-width: calc(375px - 3rem);
+    border-radius: 1rem;
+    background: var(--clr-bg-100);
+    text-align: center;
+}
+
+header {
+    background-image: url('/images/bg-pattern-card.svg');
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: calc(375px - 3rem);
+    height: 140px;
+}
+
+div.img-profile {
+    width: 96px;
+    height: 96px;
+    margin: -3.2rem auto 0;
+    overflow: hidden;
+}
+
+div.img-profile img {
+    border-radius: 50%;
+    border: 5px solid var(--clr-bg-100);
+}
+
+article .top {
+    padding: 1rem 0 1.4rem;
+}
+
+article .top h1 {
+    font-size: 1.125rem;
+    color: var(--clr-primary-2);
+    font-weight: var(--font-bold);
+}
+
+article .top span.age {
+    color: var(--clr-neutral-1);
+    font-weight: var(--font-normal);
+    margin-left: .4rem;
+}
+
+article .top h2 {
+    font-size: .875rem;
+    font-weight: var(--font-normal);
+    color: var(--clr-neutral-1);
+    margin: .5rem 0;
+}
+
+article .bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    border-top: 1px solid #ddd;
+    padding: 1rem 2rem;
+}
+
+article .bottom h1 {
+    font-size: 1.125rem;
+    color: var(--clr-primary-2);
+    font-weight: var(--font-bold);
+}
+
+article .bottom p {
+    font-size: .6rem !important;
+    color: var(--clr-neutral-1);
+    letter-spacing: 1px;
+}
