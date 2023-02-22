@@ -69,7 +69,6 @@ body {
     background-image: url('/images/bg-pattern-top.svg'), url('/images/bg-pattern-bottom.svg');
     background-position: -90% -500px, 170% 400px;
     background-repeat: no-repeat;
-    background-size: 1080px;
     display: grid;
     place-content: center;
     padding: 0 1.5rem;
